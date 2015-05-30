@@ -1,0 +1,39 @@
+<section class="mainView planner">
+	<div class="container">
+		<div class="row">
+			<div class="eight columns offset-by-two content">
+				<h3><i class="fa fa-bicycle fa-1x"></i>&nbsp;&nbsp;Plan your ride</h3>
+				<img src="components/sc-partner.png" alt="Santandar Cycles" class="logo" />
+				<div class="u-cf"></div>
+				<p>Tell us where you are and where you want to go. We'll provide you the nearest Santandar Bicycle stations and the quickest bike route. We make sure there are bikes for everyone in your group.</p>
+				<p class="error" ng-show="errorKill">
+					{{errorKill}}
+				</p>
+				<p class="error" ng-show="errorShow">
+					{{errorShow}}
+				</p>
+				<form ng-submit="getDirections()" ng-show="!errorKill">
+					<label for="startAutocomplete">
+						Where are you right now?
+						<a ng-click="useGeoLocation('start');" href="" class="u-pull-right">use geolocation</a>
+					</label>
+					<input id="startAutocomplete" class="u-full-width" placeholder="Start address" type="text" ng-model="startText" />
+					<label for="startAutocomplete">
+						Where do you want to go?
+						<a ng-click="useGeoLocation('end');" href="" class="u-pull-right">use geolocation</a>
+					</label>
+					<input id="endAutocomplete" class="u-full-width" placeholder="End address" type="text" ng-model="endText" />
+					<label for="numGroup">How many people in your party?</label>
+					<input id="numGroup" type="number" ng-model="numPeople">
+					<div ng-show="isLoading">
+					    <center>
+					        <i class='fa fa-3x fa-spinner fa-pulse'></i> 
+					    </center>
+					</div>
+					<input type="submit" value="Get your bike route" ng-show="!isLoading">
+					<p class="small">Santander Cycles data supplied {{lastUpdate | date:'dd-MM-yyyy HH:mm'}} by Transport for London<br /><a href="#/info">More info</a></p>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>

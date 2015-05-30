@@ -1,0 +1,52 @@
+<section id="topBar">
+	<div class="container">
+		<div class="row">
+			<div class="four columns">
+				<p>
+				    <a name="topAnch"></a>
+					<strong>From:</strong><br />
+					{{startText}}
+				</p>
+			</div>
+			<div class="four columns">
+				<p>
+					<strong>To:</strong><br />
+					{{endText}}
+				</p>
+			</div>
+			<div class="two columns">
+				<p>
+					<strong># of people:</strong><br />
+					{{numPeople}}
+				</p>
+			</div>
+			<div class="two columns">
+				<p>
+					<a href="#/planner" class="backToEdit"><i class="fa fa-edit"></i> edit route</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="routeView">
+    <div class="row">
+        <div class="eight columns mapContainer">
+            <div id="map-canvas"></div>
+        </div>
+        <div class="four columns textContainer">
+            <div id="navSelector">
+				<a href="" ng-click="setRouteDisplay('walk1');" ng-class="{active: routePanelVisible('walk1')}">Start<br /><i class="fa fa-male fa-2x"></i></a>
+				<a href="" ng-click="setRouteDisplay('bike');" ng-class="{active: routePanelVisible('bike')}">Bicycling<br /><i class="fa fa-bicycle fa-2x"></i></a>
+				<a href="" ng-click="setRouteDisplay('walk2');" ng-class="{active: routePanelVisible('walk2')}">Destination<br /><i class="fa fa-male fa-2x"></i></a>
+			</div>
+			<div class="u-cf"></div>
+			<div id="directionsPanel" class="routePanel" ng-show="routePanelVisible('walk1');"></div>
+		    <div id="directionsPanel2" class="routePanel" ng-show="routePanelVisible('bike');"></div>
+			<div id="directionsPanel3" class="routePanel" ng-show="routePanelVisible('walk2');"></div>
+			</div>
+        </div>
+    </div>
+    <div class="row footerRoute">
+        <a href="#/info">Santandar Cycles Trip Planne - More Info</a>
+    </div>
+</section>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="BikePlanner">
+<head>
+
+  <!-- DEFAULT NEEDS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Santandar Bike Trip Planner - London</title>
+  <meta name="description" content="Plan your trip on Santander Bikes through London!">
+  <meta name="author" content="Joost Ouwerling">
+
+  <!-- MOBILE SETTINGS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="components/Skeleton-2.0.4/css/normalize.css">
+  <link rel="stylesheet" href="components/Skeleton-2.0.4/css/skeleton.css">
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+</head>
+<body>
+  <section id="top" class="u-full-width">
+    <div class="container">
+      <h5><strong>Santandar Cycles Trip Planner - London</strong></h5>
+    </div>
+  </section>
+  <section class="mainContent">
+     <div ng-view></div>
+  </section>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+
+  <!--<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">-->
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places,geometry"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-local-storage/dist/angular-local-storage.min.js"></script>
+
+
+  <script src="components/route/RouteDataContainer.js"></script>
+  <script src="components/geo/LondonGeoBounds.js"></script>
+  <script src="components/geo/GeoLocation.js"></script>
+
+  <script src="components/stations/NearestStationService.js"></script>
+  <script src="components/stations/SantandarFeedUrl.js"></script>
+  <script src="components/stations/SantandarFeedHttpAdapter.js"></script>
+  <script src="components/stations/SantandarBicycleStations.js"></script>
+
+  <script src="components/google/DirectionsRendererBicyclingOptions.js"></script>
+  <script src="components/google/DirectionsRendererWalkingOptions.js"></script>
+  <script src="components/google/DirectionsRendererFactory.js"></script>
+  <script src="components/google/GoogleAutocomplete.js"></script>
+
+  <script src="app.js"></script>
+  <script src="planner/planner.js"></script>
+  <script src="info/info.js"></script>
+  <script src="route/route.js"></script>
+  <script src="https://x2js.googlecode.com/hg/xml2json.min.js"></script>
+</body>
+</html>

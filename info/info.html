@@ -1,0 +1,32 @@
+<section class="mainView">
+	<div class="container">
+		<div class="row">
+			<div class="eight columns offset-by-two content">
+				<h3>About this application</h3>
+				<p>You can use this webapp to plan your trip through London on one of the Santandar Bicycles available for hire on various locations in the city. 
+				Start and end locations are suggested, but you can also use the browsers geolocation feature, if available.
+				We'll look for the closest station near you, measured in walking distance. 
+				We take into account how many persons you want to travel with - we only select stations which have enough bikes for rent at the start and enough empty slots at the end.
+				When we have calculated your optimal route, we provide you a map as well as textual directions to get from your start point to your end point. Note that the complete application is <strong>mobile friendly</strong>!
+				</p>
+				<h3>Used technologies</h3>
+				<p>
+				    The main technology used is <a href="http://angularjs.org" target="_blank">AngularJs</a>, for all application logic. There is a small proxy written in PHP to fetch the feed (~10 lines).
+				    <a href="http://getskeleton.com/" target="_blank">Skeleton</a> is used as the HTML5 responsive boilerplate, since it is beautifully light and easy to use.
+				    A special thanks to <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a> for the beautiful icons,
+				    Gregory Pike for the <a href="https://github.com/grevory/angular-local-storage" target="_blank">Angular Local Storage</a> module, which is used for storing the station feed on the client side to improve performance,
+				    the creators of <a href="http://code.google.com/p/x2js/" target="_blank">X2JS</a>, the library which parses the XML station feed into usable JSON data,
+				    and Google for their useful API's, <a href="https://developers.google.com/places/javascript/">Google Places</a>, <a href="https://developers.google.com/maps/documentation/distancematrix/">Google Maps Distance Matrix</a>
+				    and <a href="https://developers.google.com/maps/documentation/javascript/3.exp/reference#DirectionsService" target="_blank">Google Maps Directions Service</a>. 
+				    Last but not least, a thanks to Transport for London, for supplying the <a href="https://tfl.gov.uk/info-for/open-data-users/our-feeds" target="_blank">Santandar Cycles Station Feed</a>.
+				</p>
+				<h3>The author</h3>
+				<p>
+				    This application is created by <a href="http://joostouwerling.com" target="_blank">Joost Ouwerling</a>, as his entry for the <a href="http://www.programmr.com/hired_london_hackathon">Hired London Hackathon</a>.
+				    All code can be found at <a href="http://github.com/joostouwerling/" target="_blank">Github</a>.
+				</p>
+				<a href="#/planner">&raquo; Back to the planner</a>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,193 @@
+/* app css stylesheet */
+
+html {
+  background: url('./components/santandar2.jpg'); background-size: cover; background-repeat: no-repeat;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+#top {
+  background-color: #141414
+}
+#top h5 {
+  text-align: center; color: #fff; margin: 0; padding: 10px 0;
+}
+
+.error {
+  border: 1px solid #f00;
+  color: #f00;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#topBar {
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #fff;
+}
+
+#topBar p {
+  margin: 10px 0;
+}
+
+.routePanel {
+    max-height: 670px; overflow: auto;
+}
+
+
+#navSelector a {
+  display: block;
+  padding: 2%;
+  width: 29%;
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  color: #838F96;
+}
+
+#navSelector a:hover {
+  color: #546773;
+}
+#navSelector a.active {
+    color: #546773;
+    font-weight: bold;
+}
+.footerRoute {
+    padding: 10px 0;
+    text-align: center;
+}
+.footerRoute a {
+    font-size: 75%;
+}
+
+.routeView {
+    background: #fff;
+}
+
+.mainView {
+  margin: 40px 0;
+}
+.mainView .container .row .content {
+  background: #fff;
+  padding: 25px 7%;
+  /*background: rgba(0,0,0,0.85);
+  color: #fff;*/
+}
+.mainView .container .row div h3 {
+  text-align: center;
+}
+
+.mainView .container .row div input[type="submit"] {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.logo {
+  display: block; margin: auto;
+}
+.planner .content h3 {
+  display: block;
+  text-align: center;
+}
+
+@media (min-width: 1000px) {
+  .logo {
+    display: inline-block; float: right;
+  }
+  .planner .content h3 {
+    display: inline-block; float: left; text-align: left;
+  }
+}
+
+.textContainer {
+    margin-left: 1.75%; margin-right: 1.75%;
+}
+
+.backToEdit {
+    text-decoration: none; line-height: 48px;
+}
+
+#map-canvas {
+    height: 750px; width: 100%;
+}
+
+@media (max-width: 550px) {
+    .mapContainer {
+         padding: 0 20px;
+    }
+    .textContainer {
+        margin: 20px 0 0;
+        padding: 0 10px;
+    }
+    #map-canvas {
+        height: 350px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .backToEdit {
+        line-height: normal;
+    }
+}
+
+.santander {
+  display: block; margin: auto;
+  margin: 20px 0;
+}
+.small {
+  margin-top: 10px;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+
+
+/*.content {
+	-webkit-transition: -webkit-transform 1s;
+	-webkit-perspective: 600px;
+}*/
+/*
+.mainContent {
+    -webkit-transition: -webkit-transform 1s;
+	-webkit-perspective: 600px;
+}
+.mainContent .flip {
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	-webkit-transition: all 1s ease-in-out;
+}
+.mainContent .flip.ng-enter {
+    -webkit-transform: rotateY(-180deg);
+}
+.mainContent .flip.ng-enter-active {
+	-webkit-transform: rotateY(0deg);
+}
+.mainContent .flip.ng-leave {
+	-webkit-transform: rotateY(0deg);
+}
+.mainContent .flip.ng-leave-active {
+	-webkit-transform: rotateY(180deg);
+}*/
+/*
+.flip.ng-enter,
+.flip.ng-leave {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.flip.ng-enter {
+    opacity: 0;
+}
+.flip.ng-enter-active {
+    opacity: 1;
+}
+.flip.ng-leave {
+    opacity: 1;
+}
+.flip.ng-leave-active {
+    opacity: 0;
+}*/
